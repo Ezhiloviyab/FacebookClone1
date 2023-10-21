@@ -2,6 +2,9 @@ import {useState } from 'react';
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom'
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 
 import { emailValidator,passwordValidator } from '../components/rejuxvalidator';
@@ -34,14 +37,14 @@ const Login = () => {
        navigate('/home');
       };
   return (
-    <div className="container">
-    <div className='row'> 
-    <div className='col-6' >
+    <Container>
+    <Row className='mt-5'> 
+    <Col xs={10} md={7} >
 
-        <h1>facebook</h1>
+        <h1 style={{color:'blue',fontSize:'70px',fontWeight:'800px'}}>facebook</h1>
         <h5>Facebook helps you connect and share<br/>with the people in your life.</h5>
-        </div> 
-    <div className='col-6'>   
+        </Col> 
+    <Col xs={8} md={5}>   
               <form onSubmit={FormSubmitter} className='ms-5'><span>
               {errorMessage.length > 0 && <div style={{ marginBottom: '10px', color: 'red' }}>{errorMessage}</div>}
               {successMessage.length > 0 && <div style={{ marginBottom: '10px', color: 'green' }}>{successMessage}</div>}
@@ -63,10 +66,10 @@ const Login = () => {
               </form>
             
             
-              </div> 
-              </div> 
+              </Col> 
+              </Row> 
         
-      </div>
+      </Container>
     
         
   );
