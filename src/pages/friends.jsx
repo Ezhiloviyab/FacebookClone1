@@ -34,34 +34,34 @@ const Friends = () => {
 
             </Col>
             <Col className="friendslist" md={8}>
-<MDBRow className='row-cols-1 row-cols-md-1 g-4'>
+<MDBRow className='row-cols-1 row-cols-md-3 g-4'>
 
             <MDBCol className="friendscard">
-        <MDBCard className='individual'>
+        <MDBCard className='individual mx-5 '>
           <MDBCardImage
             src='/images/itachi.jpeg'
-            alt='...'
-            position='top' style={{height:"80px",width:"100px",borderRadius:"50%"}}
+            className="img"
+            position='top'
           />
           <MDBCardBody>
            
-            <MDBCardSubTitle>Srk Kurnool (Friends forever)<br></br>
-STBC Grounds, Kurnool · Lives in Kurnool</MDBCardSubTitle>
+            <MDBCardSubTitle>Srk Kurnool<br></br>
+ · Lives in Kurnool</MDBCardSubTitle>
             <MDBBtn className="addfriend" style={{width:"150px"}}  >+ Add friend</MDBBtn> 
           </MDBCardBody>
         </MDBCard> <br/>
       </MDBCol>
 
       <MDBCol className="friendscard">
-        <MDBCard className='individual'>
+        <MDBCard className='individual mx-5'>
           <MDBCardImage
             src='/images/rc.jpeg'
-            alt='...'
-            position='top' style={{height:"80px",width:"100px",borderRadius:"50%"}}
+            className="img"
+            position='top'
           />
           <MDBCardBody>
            
-            <MDBCardSubTitle>Parvaiz Ah Najar (Plzz support friends)<br></br>
+            <MDBCardSubTitle>Parvaiz Ah Najar<br></br>
 75 followers</MDBCardSubTitle>
             <MDBBtn className="addfriend" style={{width:"150px"}}  >+ Add friend</MDBBtn> 
           </MDBCardBody>
@@ -69,62 +69,106 @@ STBC Grounds, Kurnool · Lives in Kurnool</MDBCardSubTitle>
       </MDBCol>
 
       <MDBCol className="friendscard">
-        <MDBCard className='individual'>
+        <MDBCard className='individual mx-5'>
           <MDBCardImage
             src='/images/uzna.jpeg'
-            alt='...'
-            position='top' style={{height:"80px",width:"100px",borderRadius:"50%"}}
+            className="img"
+            position='top'
           />
           <MDBCardBody>
            
             <MDBCardSubTitle>Uzumaki Naruto (Friends)<br></br>
-Works at Surat, Gujarat ·<br></br> From Magadh University bodhgaya,gaya,Bihar. · Lives in Gaya, India</MDBCardSubTitle>
+Works at Surat, Gujarat ·<br></br></MDBCardSubTitle>
             <MDBBtn className="addfriend" style={{width:"150px"}}  >+ Add friend</MDBBtn> 
           </MDBCardBody>
         </MDBCard> <br/>
       </MDBCol>
 
       <MDBCol className="friendscard">
-        <MDBCard className='individual'>
+        <MDBCard className='individual mx-5'>
           <MDBCardImage
             src='/images/ironman.jpeg'
-            alt='...'
-            position='top' style={{height:"80px",width:"100px",borderRadius:"50%"}}
+            className="img"
+            position='top'
           />
           <MDBCardBody>
            
-            <MDBCardSubTitle>Srk Kurnool (Friends forever)<br></br>
-STBC Grounds, Kurnool · Lives in Kurnool</MDBCardSubTitle>
+            <MDBCardSubTitle>Srk Kurnool <br></br>
+ Lives in Kurnool</MDBCardSubTitle>
             <MDBBtn className="addfriend" style={{width:"150px"}}  >+ Add friend</MDBBtn> 
           </MDBCardBody>
         </MDBCard> <br/>
       </MDBCol>
 
       <MDBCol className="friendscard">
-        <MDBCard className='individual'>
+        <MDBCard className='individual mx-5'>
           <MDBCardImage
             src='/images/fish.jpeg'
-            alt='...'
-            position='top' style={{height:"80px",width:"100px",borderRadius:"50%"}}
+            className="img"
+            position='top'
           />
           <MDBCardBody>
            
             <MDBCardSubTitle>FRIENDS TECHNOLOGIES <br></br>
-Works at Hanuman Junction · Lives in Nuzvid</MDBCardSubTitle>
+ Lives in Nuzvid</MDBCardSubTitle>
             <MDBBtn className="addfriend" style={{width:"150px"}}  >+ Add friend</MDBBtn> 
           </MDBCardBody>
         </MDBCard> <br/>
       </MDBCol>
       <MDBCol className="friendscard">
-        <MDBCard className='individual'>
+        <MDBCard className='individual mx-5'>
           <MDBCardImage
             src='/images/leo.jpeg'
-            alt='...'
-            position='top' style={{height:"80px",width:"100px",borderRadius:"50%"}}
+            className="img"
+            position='top'
           />
           <MDBCardBody>
            
-            <MDBCardSubTitle>Nithish kannan</MDBCardSubTitle>
+            <MDBCardSubTitle>Nithish kannan <br></br>Lives in chennai</MDBCardSubTitle>
+            <MDBBtn className="addfriend" style={{width:"150px"}}  >+ Add friend</MDBBtn> 
+          </MDBCardBody>
+        </MDBCard> <br/>
+      </MDBCol>
+      <MDBCol className="friendscard">
+        <MDBCard className='individual mx-5'>
+          <MDBCardImage
+            src='/images/IMG_9267.PNG'
+            className="img"
+            position='top'
+          />
+          <MDBCardBody>
+           
+            <MDBCardSubTitle>Day dreamer<br></br>Lives in Mayiladuthurai</MDBCardSubTitle>
+            <MDBBtn className="addfriend" style={{width:"150px"}}  >+ Add friend</MDBBtn> 
+          </MDBCardBody>
+        </MDBCard> <br/>
+      </MDBCol>
+
+      <MDBCol className="friendscard">
+        <MDBCard className='individual mx-5'>
+          <MDBCardImage
+            src='/images/arjundas.jpeg'
+            className="img"
+            position='top'
+          />
+          <MDBCardBody>
+           
+            <MDBCardSubTitle>Arjun das <br></br>Lives in chennai</MDBCardSubTitle>
+            <MDBBtn className="addfriend" style={{width:"150px"}}  >+ Add friend</MDBBtn> 
+          </MDBCardBody>
+        </MDBCard> <br/>
+      </MDBCol>
+
+      <MDBCol className="friendscard">
+        <MDBCard className='individual mx-5'>
+          <MDBCardImage
+            src='/images/sugn.jpeg'
+            className="img"
+            position='top'
+          />
+          <MDBCardBody>
+           
+            <MDBCardSubTitle>Ryomen Sukuna -<br></br> Jujutsu Kaisen </MDBCardSubTitle>
             <MDBBtn className="addfriend" style={{width:"150px"}}  >+ Add friend</MDBBtn> 
           </MDBCardBody>
         </MDBCard> <br/>

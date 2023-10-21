@@ -1,20 +1,61 @@
 import Navigation from "../components/Navigation/Navigation";
 import React from "react";import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
 import {FiSettings,FiSearch,FiHome} from 'react-icons/fi';
 import{MdFeed}from 'react-icons/md'
 import{FaCompass}from 'react-icons/fa'
 import{HiOutlineUserGroup }from 'react-icons/hi'
 import './groups.css'
-import {
-    MDBCard,
-    MDBCardImage,
-    MDBCardBody,
-    MDBCardTitle,
-    MDBRow,
-    MDBCol,MDBBtn, MDBCardSubTitle
-  } from 'mdb-react-ui-kit';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import {  Row, Col } from 'react-bootstrap';
+import { MDBCard, MDBCardImage, MDBCardBody, MDBCardTitle, MDBBtn } from 'mdbreact';
+
+
+const cardData = [
+  {
+    title: 'வருதபடாதவாலிபர்சங்கம்',
+    image: '/images/vp.jpeg', 
+  },
+  {
+    title: 'Uzumaki Clan',
+    image: '/images/nn.jpeg', 
+  },
+  {
+    title: 'Bloody Sweet',
+    image: '/images/leo.jpeg', 
+  },
+  {
+    title: 'Marvel studios ',
+    image:' /images/marvel.jpeg', 
+  },
+  {
+    title: 'Uchiha',
+    image: '/images/itachi.jpeg', 
+  },
+  {
+    title: 'Jujustu kaisen-2',
+    image: '/images/sugn.jpeg', 
+  },
+  
+];
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 768 },
+    items: 2,
+  },
+  mobile: {
+    breakpoint: { max: 768, min: 0 },
+    items: 1,
+  },
+};
+
+  
+
 
 const Groups = () => {
 
@@ -32,50 +73,31 @@ const Groups = () => {
 <button className="groupbtn text-primary" style={{backgroundColor:"lightcyan",border:"none" ,width:"250px"}}>+Create new group</button>
             </Col>
             <Col className="Grouplist" md={8}>
-            <MDBRow className='row-cols-1 row-cols-md-2 g-4'>
-            <MDBCol className="groupscard">
-        <MDBCard className='gropcard p-4'>
-          <MDBCardImage
-            src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9YIp6M2vKtP4Ab2CSBua9pFejB28jylVwog&usqp=CAU'
-            alt='...'
-            position='top' style={{height:"250px",width:"200px",borderRadius:"50%"}}
-          />
-          <MDBCardBody>
-           
-            <MDBCardSubTitle className="ms-3"> Anime Freeks</MDBCardSubTitle>
-            <MDBBtn className="joingroup" style={{width:"150px"}}  >Join Group</MDBBtn> 
-          </MDBCardBody>
-        </MDBCard> <br/>
-      </MDBCol>
-      <MDBCol className="groupscard">
-        <MDBCard className='gropcard p-4'>
-          <MDBCardImage
-            src='/images/marvel.jpeg'
-            alt='...'
-            position='top' style={{height:"200px",width:"200px",borderRadius:"50%"}}
-          />
-          <MDBCardBody>
-           
-            <MDBCardSubTitle className="ms-3">Marvel studios</MDBCardSubTitle>
-            <MDBBtn className="joingroup" style={{width:"150px"}}  >Join Group</MDBBtn> 
-          </MDBCardBody>
-        </MDBCard> <br/>
-      </MDBCol>
 
-      <MDBCol className="groupscard">
-        <MDBCard className='gropcard p-4'>
-          <MDBCardImage
-            src='/images/nn.jpeg'
-            position='top' style={{height:"200px",width:"200px",borderRadius:"50%"}}
-          />
-          <MDBCardBody>
-           
-            <MDBCardSubTitle className="ms-3">Uzumaki clan</MDBCardSubTitle>
-            <MDBBtn className="joingroup" style={{width:"150px"}}  >Join Group</MDBBtn> 
-          </MDBCardBody>
-        </MDBCard> <br/>
-      </MDBCol>
-            </MDBRow>
+             
+ <Container>
+      <Carousel
+        responsive={responsive}
+        arrows={true}
+        swipeable={true}
+        draggable={false}
+        containerClass="carousel-container"
+      >
+        {cardData.map((movie, index) => (
+          <div key={index}>
+            <MDBCard  className="groupcard">
+              <MDBCardImage className="groupimg" src={movie.image} alt={movie.title} />
+              <MDBCardBody>
+                <MDBCardTitle>{movie.title}</MDBCardTitle>
+                <MDBBtn color="primary" className="groupbtn">Join group</MDBBtn>
+              </MDBCardBody>
+            </MDBCard>
+          </div>
+        ))}
+      </Carousel>
+    </Container>
+
+
             </Col>
             </Row>
             <Navigation/>

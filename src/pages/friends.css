@@ -15,15 +15,19 @@ padding: 15px;
 }
 
 .individual{
-    display: flex;
-    flex-direction: row;
-    height: 100px;
-width: 800px;
+    height: 290px;
+        width: 250px;
+        padding: 15px;
+}
+.img{
+    position: relative;
+    left: 40px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
 }
 .addfriend{
-    position: relative;
-    left: 500px;
-    bottom: 40px;
+   
     color: blue;
     background-color: rgb(199, 230, 249);
     border: none;
